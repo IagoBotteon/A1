@@ -1,0 +1,53 @@
+
+#selfImg {
+  margin: 1px;
+  top: 10px;
+}
+
+#aboutME {
+  width: 1000px; 
+  margin: 10px; 
+  margin-right: 100px;
+  left: 20px;
+  
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 1;
+  font-size: 25px;
+  font-weight: bold;
+}
+.home-container{
+  list-style: none; 
+  padding: 0;
+  margin: 1;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+#footer-content{
+  position: relative; 
+  top: 100px;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 10px; /* Adjust the spacing between items */
+  background-color: rgb(6, 115, 241); /* Background color for each word */
+  color: white; /* Text color (white on blue background) */
+  padding: 5px; /* Add some padding for spacing */
+  margin: 5px; /* Add margin for spacing between words */
+  border-radius: 5px; /* Add rounded corners for a box effect */
+}
+
+/* Additional styling for the <a> tags within <li> */
+.navigation li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Set the color of the links */
+}
+
+.header {
+  text-align: center; /* Optional: Center content inside the container */
+}
