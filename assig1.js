@@ -34,12 +34,12 @@ app.get('/contact', (req, res) => {
 app.post('/submit-contact', (req, res) => {
     let firstname = req.body.firstName;
     console.log(firstname);
-    // let lastname = req.body.lastName
-    // console.log(lastname)
-    // let contactnumber = req.body.contactNumber
-    // console.log(contactnumber)
-    // let eml = req.body.email
-    // console.log(eml)
+    let lastname = req.body.lastName
+    console.log(lastname)
+    let contactnumber = req.body.contactNumber
+    console.log(contactnumber)
+    let eml = req.body.email
+    console.log(eml)
     //res.render('submit-contact'); // Render the 'home.ejs' template
     res.redirect('/contact');
 });
