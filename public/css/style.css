@@ -34,20 +34,20 @@
 
 .navigation li {
   display: inline;
-  margin-right: 10px; /* Adjust the spacing between items */
-  background-color: rgb(6, 115, 241); /* Background color for each word */
-  color: white; /* Text color (white on blue background) */
-  padding: 5px; /* Add some padding for spacing */
-  margin: 5px; /* Add margin for spacing between words */
-  border-radius: 5px; /* Add rounded corners for a box effect */
+  margin-right: 10px; 
+  background-color: rgb(6, 115, 241); 
+  color: white; 
+  padding: 5px; 
+  margin: 5px; 
+  border-radius: 5px; 
 }
 
-/* Additional styling for the <a> tags within <li> */
+
 .navigation li a {
-  text-decoration: none; /* Remove underlines from links */
-  color: #333; /* Set the color of the links */
+  text-decoration: none; 
+  color: #333;
 }
 
 .header {
-  text-align: center; /* Optional: Center content inside the container */
+  text-align: center; 
 }

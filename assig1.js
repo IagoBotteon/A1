@@ -2,38 +2,42 @@ const express = require('express');
 const bodyparser = require('body-parser')
 const app = express();
 
-// Set up static files (CSS, images, JavaScript)
+
 app.use(express.static('public'));
 
-// Set EJS as the view engine
 app.set('view engine', 'ejs');
 app.use(bodyparser.urlencoded({extended:true}))
 
 
-// Define routes for each page
 app.get('/', (req, res) => {
-    res.render('home'); // Render the 'home.ejs' template
+    res.render('home'); 
   });
   
   app.get('/about', (req, res) => {
-    res.render('about'); // Render the 'about.ejs' template
+    res.render('about'); 
   });
   
   app.get('/projects', (req, res) => {
-    res.render('projects'); // Render the 'projects.ejs' template
+    res.render('projects'); 
   });
   
   app.get('/services', (req, res) => {
-    res.render('services'); // Render the 'services.ejs' template
+    res.render('services'); 
   });
   
   app.get('/contact', (req, res) => {
-    res.render('contact'); // Render the 'contact.ejs' template
+    res.render('contact'); 
   });
 
   app.post('/submit-contact', (req, res) => {
     let firstname = req.body.firstName
     console.log(firstname)
+    // let lastname = req.body.lastName
+    // console.log(lastname)
+    // let contactnumber = req.body.contactNumber
+    // console.log(contactnumber)
+    // let eml = req.body.email
+    // console.log(eml)
     //res.render('submit-contact'); // Render the 'home.ejs' template
     res.redirect('/contact')
   });
